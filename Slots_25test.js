@@ -43,7 +43,7 @@ function Restart() {
 function Go2() {
     random = Math.randomRange(1, 100)
     if (slot == 1) {
-        if (random <= 40) {
+        if (random <= 35) {
             game2 = game2 - 1
             win = win + 1
             Win1 += 1
@@ -51,7 +51,7 @@ function Go2() {
             game2 = game2 - 1
         }
     } else if (slot == 2) {
-        if (random > 40) {
+        if (random > 35) {
             game2 = game2 - 1
             win = win + 1
             Win2 += 1
