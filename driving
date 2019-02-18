@@ -43,5 +43,5 @@ basic.forever(function () {
         }
     }
     ticks += 1
-    basic.pause(1000 - Score * 5)
+    basic.pause(1000 - Math.sqrt(Score) * 20)
 })
