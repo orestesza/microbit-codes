@@ -14,10 +14,10 @@ class BankAccount:
         print("Withdraw successfully.")
 
 class InterestAccount(BankAccount):
-    def __init__(self, ratio):
+    def __init__(self, ratio):     #设定利率
         BankAccount.__init__(self, "Em", "24680", 210.54)  #在子类中直接定义母类里的属性
         self.radio = float(ratio)
-    def ratio(self, year):
+    def ratio(self, year):     #计算若干年之后的存款
         self.money = self.money*(1 + self.radio)**year
 
 
